@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Os Maristas · Tapería gallega en la Praza da Verdura, Pontevedra</title>
+<meta name="description" content="Os Maristas, tapería de cocina gallega contemporánea en la Praza da Verdura (Pontevedra). Conoce su historia, su carta y sus platos más queridos.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#faf5ec;--surf:#fff;--text:#1f2a2e;--muted:#5f6b6e;--line:#e8dfcf;--sea:#0f4c5c;--acc:#c8553d;--hero:#0f4c5c;--herot:#fdf6e8;--seat:#f3e9d6}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1417;--surf:#152126;--text:#ece8de;--muted:#9fb0b3;--line:#24343a;--sea:#6fc3d3;--acc:#f0866c;--hero:#0a2a33;--herot:#fdf6e8;--seat:#1b2b31}}
+:root[data-theme="dark"]{--bg:#0d1417;--surf:#152126;--text:#ece8de;--muted:#9fb0b3;--line:#24343a;--sea:#6fc3d3;--acc:#f0866c;--hero:#0a2a33;--herot:#fdf6e8;--seat:#1b2b31}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:17px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:20}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.15;margin:0}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--hero);color:var(--herot);border-bottom:1px solid rgba(255,255,255,.12)}
+nav{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 18px}
+.logo{font:700 20px Fraunces,Georgia,serif;text-decoration:none;letter-spacing:.01em}
+nav div{display:flex;gap:18px;font-size:15px}
+nav a{text-decoration:none;opacity:.88}nav a:hover{opacity:1}
+@media(max-width:560px){nav div a:nth-child(n+4){display:none}nav div{gap:14px}}
+.hero{background:linear-gradient(160deg,var(--hero),#1b6b7d);color:var(--herot);text-align:center;padding:96px 20px 90px}
+.hero .k{letter-spacing:.22em;text-transform:uppercase;font-size:13px;opacity:.8;margin:0 0 18px}
+.hero h1{font-size:clamp(44px,10vw,88px);letter-spacing:-.02em}
+.hero p.l{max-width:620px;margin:20px auto 30px;font-size:19px;opacity:.92}
+.btn{display:inline-block;padding:14px 26px;border-radius:99px;background:var(--acc);color:#fff;text-decoration:none;font-weight:600;margin:4px}
+.btn.o{background:none;border:1.5px solid rgba(253,246,232,.6);color:var(--herot)}
+section{max-width:1000px;margin:0 auto;padding:76px 20px 10px}
+.eyebrow{color:var(--acc);font-weight:600;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}
+h2{font-size:clamp(30px,5vw,44px);margin-bottom:18px}
+.lead{color:var(--muted);max-width:660px;margin:0 0 30px}
+.tl{border-left:2px solid var(--line);margin:30px 0 0 6px;padding-left:28px}
+.tl div{position:relative;margin-bottom:26px}
+.tl div::before{content:"";position:absolute;left:-37px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--acc);border:3px solid var(--bg)}
+.tl b{font-family:Fraunces,Georgia,serif;font-size:20px;display:block}.tl span{color:var(--muted)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.tabs button{font:inherit;font-weight:600;padding:10px 20px;border-radius:99px;border:1px solid var(--line);background:var(--surf);color:var(--text);cursor:pointer}
+.tabs button.on{background:var(--sea);border-color:var(--sea);color:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.card{background:var(--surf);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card .e{font-size:30px}.card h3{font-size:21px;margin:8px 0 6px}.card p{margin:0;color:var(--muted);font-size:15.5px}
+.badge{display:inline-block;margin-top:12px;font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--seat);color:var(--sea)}
+.awards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.aw{background:var(--seat);border-radius:18px;padding:22px;text-align:center}.aw b{font:700 22px Fraunces,Georgia,serif;display:block;color:var(--sea)}.aw span{color:var(--muted);font-size:15px}
+.visit{background:var(--hero);color:var(--herot);border-radius:24px;padding:40px 26px;text-align:center;margin-top:20px}
+.visit h2{margin-bottom:10px}.visit p{opacity:.9;margin:0 0 20px}
+footer{max-width:1000px;margin:60px auto 0;padding:26px 20px 50px;color:var(--muted);font-size:13.5px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="#top">Os Maristas</a><div><a href="#historia">Historia</a><a href="#carta">Carta</a><a href="#premios">Premios</a><a href="#visitanos">Visítanos</a></div></nav></header>
+
+<div class="hero" id="top">
+  <p class="k">Praza da Verdura · Pontevedra</p>
+  <h1>Os Maristas</h1>
+  <p class="l">Tapería gallega con alma contemporánea, en pleno casco histórico. Producto de calidad, platos para compartir y mucha vida alrededor de la mesa.</p>
+  <a class="btn" href="#visitanos">Reservar mesa</a><a class="btn o" href="#carta">Ver la carta</a>
+</div>
+
+<section id="historia">
+  <p class="eyebrow">Nuestra historia</p>
+  <h2>Una tapería de barrio con técnica de alta cocina</h2>
+  <p class="lead">Os Maristas nace del oficio de su cocinero, Aarón Álvarez: un chef de Pontevedra que aprendió en grandes cocinas gallegas y decidió montar un lugar propio, cercano y sin etiquetas.</p>
+  <div class="tl">
+    <div><b>La formación</b><span>Aarón estudia Cocina y Pastelería en el CIFP Carlos Oroza, la escuela de hostelería de referencia de la ciudad.</span></div>
+    <div><b>Las grandes cocinas</b><span>Empieza su carrera en la cocina de Pepe Vieira y sigue en el restaurante Román, donde pasa más de ocho años antes de dar el salto a emprender.</span></div>
+    <div><b>2021 · Se abre Os Maristas</b><span>Abre sus puertas en la Praza da Verdura, una de las plazas con más vida del casco histórico de Pontevedra.</span></div>
+    <div><b>2023 · Solete Guía Repsol</b><span>La Guía Repsol reconoce la tapería con un Solete.</span></div>
+    <div><b>Hoy</b><span>Referente de las tapas en Pontevedra, recomendado por la Guía Michelin y con su chef entre los preseleccionados a mejor cocinero de Galicia.</span></div>
+  </div>
+</section>
+
+<section id="carta">
+  <p class="eyebrow">La carta</p>
+  <h2>Cocina sin etiquetas, en constante evolución</h2>
+  <p class="lead">Tapas, raciones y platos para compartir, con raíces gallegas y guiños mediterráneos e internacionales. La carta cambia con el producto y la temporada: esta es una guía de lo que ha hecho famosa la casa.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+  <p class="lead" style="margin-top:22px;font-size:15px">Consulta siempre la carta actualizada, los alérgenos y los precios llamando al local o preguntando en sala.</p>
+</section>
+
+<section id="premios">
+  <p class="eyebrow">Reconocimientos</p>
+  <h2>Lo que dicen de nosotros</h2>
+  <div class="awards">
+    <div class="aw"><b>Guía Michelin</b><span>Restaurante recomendado en Pontevedra</span></div>
+    <div class="aw"><b>Solete Repsol</b><span>Guía Repsol, otoño de 2023</span></div>
+    <div class="aw"><b>Mejor cocinero de Galicia</b><span>Aarón Álvarez, entre los cinco preseleccionados</span></div>
+  </div>
+</section>
+
+<section id="visitanos">
+  <div class="visit">
+    <h2>Te esperamos en la Praza da Verdura</h2>
+    <p>Praza da Verdura, 5 · 36002 Pontevedra<br>Mejor reservar si quieres mesa, sobre todo en fin de semana.</p>
+    <a class="btn" href="tel:+34683429027">📞 Llamar · 683 429 027</a><a class="btn" href="https://wa.me/34683429027" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    <a class="btn o" href="https://www.google.com/maps/search/?api=1&query=Os+Maristas+Praza+da+Verdura+5+Pontevedra" target="_blank" rel="noopener noreferrer">Cómo llegar</a>
+  </div>
+</section>
+
+<footer>© Os Maristas · Pontevedra. Información basada en fuentes públicas (Guía Michelin, Guía Repsol y prensa local); confirma horarios, carta y precios con el local.</footer>
+
+<script>
+const C={
+"Para compartir":[["🐙","Tacos de pulpo","Uno de los platos más recomendados de la casa: el pulpo gallego en formato taco, fresco y pensado para compartir."],["🍤","Roll de langostinos","Crujiente por fuera y jugoso por dentro, un clásico para empezar la mesa."],["🥟","Croquetas","Cremosas, caseras y de las más pedidas de la carta."],["🥧","Empanada","La gran tradición gallega, presente en la carta de la tapería."]],
+"Platos estrella":[["🍔","Hamburguesa especialidad","La hamburguesa de la casa, uno de los platos que más repiten los clientes."],["🥪","Sándwich brioche de carrillera","Carrillera melosa en pan brioche: un bocado tierno y muy reconocible."],["🍝","Canelones","Un plato de cuchara y tenedor reconfortante, de los que nunca fallan."],["🦪","Almejas","Producto del mar con la mano de un cocinero formado en grandes cocinas gallegas."]],
+"Dulce y opciones":[["🍰","Tarta de queso","Uno de los postres más comentados por los clientes."],["🌱","Opciones vegetarianas","La casa ofrece alternativas veganas y vegetarianas, como durum y hamburguesa."],["🍷","Vinos y cervezas","Una selección pensada para acompañar las tapas, de la copa a la caña."]]};
+const t=document.getElementById("tabs"),g=document.getElementById("grid");
+function show(k){
+  [...t.children].forEach(b=>b.classList.toggle("on",b.textContent===k));
+  g.innerHTML=C[k].map(x=>`<div class="card"><div class="e">${x[0]}</div><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join("");
+}
+Object.keys(C).forEach(k=>{const b=document.createElement("button");b.textContent=k;b.onclick=()=>show(k);t.appendChild(b)});
+show("Para compartir");
+</script>
+</body>
+</html>
